@@ -8,7 +8,7 @@ console.log(`Your Salary is: R50,000`)
 let earnings = document.createElement('h2')
 let Salary = document.createElement('h2')
 
-earnings.innerHTML = `earnings(rate per hour): ${hours * rate}`
+earnings.innerHTML = `earnings(rate per hour): R${Intl.NumberFormat().format(hours * rate)}`
 Salary.innerHTML = 'Salary: R50,000'
 
 document.body.appendChild(earnings)
